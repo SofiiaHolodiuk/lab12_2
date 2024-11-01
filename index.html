@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Використання оператора IF</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+				color: #333;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+			}
+			.container {
+				background-color: rgba(255, 255, 255, 0.8);
+				border-radius: 10px;
+				box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+				padding: 20px 30px;
+				width: 400px;
+				text-align: center;
+			}
+			h1 {
+				color: #d76d77;
+				font-size: 24px;
+				margin-bottom: 15px;
+			}
+			p {
+				font-size: 18px;
+				color: #555;
+			}
+			strong {
+				color: #d76d77;
+			}
+		</style>
+	</head>	
+	<body>
+		<div class="container">
+			<h1>Приклад використання оператора IF</h1>
+			<script>
+				"use strict";
+				// Приклад знаходження більшого серед трьох чисел
+				
+				document.write("<p>Приклад знаходження більшого числа серед трьох значень</p>");
+				let x = 15; 
+				let y = 27; 
+				let z = 9;
+				
+				// Використання оператора IF
+				if (x > y && x > z) {
+					document.write("Найбільше серед трьох чисел - x = ", x);
+				} else if (y > z) {
+					document.write("Найбільше серед трьох чисел - y = ", y);
+				} else {
+					document.write("Найбільше серед трьох чисел - z = ", z);
+				}
+
+				// Використання тернарної операції
+				let max = x > y ? x : y;
+				max = max > z ? max : z;
+				document.write("<p>Значення найбільшого серед трьох чисел - ", max, "</p>");
+			</script>
+		</div>
+	</body>
+</html>
